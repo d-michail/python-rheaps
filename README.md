@@ -233,6 +233,15 @@ maturin develop
 pytest
 ```
 
+`tests/test_large_scale.py` ports the large-scale conformance invariants
+`rheaps`' own Rust test suite exercises against each implementation
+(thousands of ascending/random/decreasing-key operations checked against a
+plain `sorted()` oracle, arbitrary-order deletion, melding, and — for soft
+heaps — the weaker "every inserted key eventually comes back out, in some
+order" invariant that corruption permits) across every parametrized heap
+class. It runs as part of the same `pytest` invocation (a few extra seconds),
+not a separate opt-in suite.
+
 The Rust source lives in `src/`:
 
 - `key.rs` — the `int`/`float`/`object` key representations and conversions.
