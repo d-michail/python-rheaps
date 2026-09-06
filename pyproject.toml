@@ -6,7 +6,10 @@ build-backend = "maturin"
 name = "rheaps"
 version = "0.16.0"
 description = "Python bindings for the rheaps heap/priority-queue library"
+readme = "README.md"
+license = "Apache-2.0"
 requires-python = ">=3.9"
+urls = { Homepage = "https://github.com/d-michail/python-rheaps", Repository = "https://github.com/d-michail/python-rheaps" }
 classifiers = [
     "Programming Language :: Rust",
     "Programming Language :: Python :: Implementation :: CPython",

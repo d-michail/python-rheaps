@@ -3,6 +3,9 @@ name = "_rheaps"
 version = "0.16.0"
 edition = "2024"
 rust-version = "1.88"
+description = "PyO3 native extension backing the rheaps Python package (see pyproject.toml)"
+license = "Apache-2.0"
+repository = "https://github.com/d-michail/python-rheaps"
 publish = false
 
 [lib]
