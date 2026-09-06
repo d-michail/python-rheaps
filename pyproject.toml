@@ -1,0 +1,28 @@
+[build-system]
+requires = ["maturin>=1,<2"]
+build-backend = "maturin"
+
+[project]
+name = "rheaps"
+version = "0.16.0"
+description = "Python bindings for the rheaps heap/priority-queue library"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+docs = [
+    "sphinx>=7",
+    "sphinx-rtd-theme>=2",
+    "sphinx-gallery>=0.15",
+    "matplotlib",
+    "pillow",
+]
+
+[tool.maturin]
+python-source = "python"
+module-name = "rheaps._rheaps"
+features = ["pyo3/extension-module"]
