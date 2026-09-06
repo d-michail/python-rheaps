@@ -1,5 +1,10 @@
 # python-rheaps
 
+[![Python rheaps](https://github.com/d-michail/python-rheaps/actions/workflows/CI.yml/badge.svg)](https://github.com/d-michail/python-rheaps/actions/workflows/CI.yml)
+[![PyPI](https://img.shields.io/pypi/v/rheaps.svg)](https://pypi.org/project/rheaps/)
+[![Documentation Status](https://readthedocs.org/projects/python-rheaps/badge/?version=latest)](https://python-rheaps.readthedocs.io/en/latest/?badge=latest)
+[![License: Apache 2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+
 Python bindings for [`rheaps`](https://docs.rs/rheaps), a Rust library of heap /
 priority-queue data structures, built with [PyO3](https://pyo3.rs) and
 [maturin](https://www.maturin.rs/). `rheaps` is itself a Rust port of
