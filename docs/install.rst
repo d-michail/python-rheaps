@@ -3,7 +3,15 @@
 Install
 =======
 
-Not yet published to PyPI. Build and install from source using
+Prebuilt wheels are published on `PyPI <https://pypi.org/project/rheaps/>`_
+for Linux, Windows, and macOS (Python 3.10-3.14)::
+
+  $ pip install rheaps
+
+Building from source
+---------------------
+
+To work on the bindings themselves, build with
 `maturin <https://www.maturin.rs/>`_, which requires a Rust toolchain
 (stable, edition 2024 support -- 1.88+) in addition to Python::
 

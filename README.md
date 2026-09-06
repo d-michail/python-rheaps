@@ -31,8 +31,17 @@ same broad selection of heap algorithms as native, object-oriented classes.
 
 ## Installation
 
-Not yet published to PyPI. Build and install from source with
-[maturin](https://www.maturin.rs/):
+Prebuilt wheels are published on [PyPI](https://pypi.org/project/rheaps/)
+for Linux, Windows, and macOS (Python 3.10–3.14):
+
+```bash
+pip install rheaps
+```
+
+### Building from source
+
+To work on the bindings themselves, build with
+[maturin](https://www.maturin.rs/) instead:
 
 ```bash
 python3 -m venv .venv
@@ -42,7 +51,8 @@ maturin develop          # builds the extension and installs it into the venv
 # maturin develop --release   # for an optimized build
 ```
 
-Requires a Rust toolchain (stable, edition 2024 support — 1.88+) to build.
+This requires a Rust toolchain (stable, edition 2024 support — 1.88+) to
+build.
 
 ## Quick start
 
